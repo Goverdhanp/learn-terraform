@@ -13,7 +13,7 @@ variable "y"{
 
     }
 variable "z"{
-    default{
+    default={
         name="jhon"
         age=20
     }
