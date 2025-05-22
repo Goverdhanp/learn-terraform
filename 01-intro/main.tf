@@ -38,3 +38,15 @@ output "y"{
 output "z"{
     value="Name - ${var.z["name"]}, age-${var.z.age}"
 }
+
+# auto.tfvars - automatically these files are loaded
+variable " class"{}
+output "class"{
+    value=var.class
+
+}
+
+variable "trainer"{}
+output "class"{
+    value=var.trainer
+}
