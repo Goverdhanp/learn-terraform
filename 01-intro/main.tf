@@ -40,7 +40,7 @@ output "z"{
 }
 
 # auto.tfvars - automatically these files are loaded
-variable " class"{}
+variable "class"{}
 output "class"{
     value=var.class
 
