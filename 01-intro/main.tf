@@ -47,6 +47,6 @@ output "class"{
 }
 
 variable "trainer"{}
-output "class"{
+output "trainer"{
     value=var.trainer
 }
