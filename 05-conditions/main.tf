@@ -1,5 +1,5 @@
 resource "local_file" "test"{
-    filename = "tmp/a.text"
+    filename = "tmp/a.txt"
     content = var.content == null ? "Null content" : var.content
 }
 variable "content"{
