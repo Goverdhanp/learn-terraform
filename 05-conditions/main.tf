@@ -1,4 +1,4 @@
-resource "local" "test"{
+resource "local_file" "test"{
     filename = "tmp/a.text"
     content = var.content == null ? "Null content" : var.content
 }
