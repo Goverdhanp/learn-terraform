@@ -4,7 +4,7 @@ provider "vault" {
 
 
 
-  token = var.token
+  token = var.vault_token
 }
 
 variable "vault_token" {}
