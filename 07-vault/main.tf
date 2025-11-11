@@ -1,15 +1,10 @@
 provider "vault" {
-
-  address = "https://vault-internal.gvndevops12.tech:8200"
-
-
-
+  address = "http://vault-internal.gvndevops12.tech:8200"
   token = var.vault_token
 }
 
 variable "vault_token" {}
  
-
  data "vault_generic_secret" "secret_data" {
   path = "test/demo"
 }
