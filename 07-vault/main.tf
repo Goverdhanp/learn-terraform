@@ -14,8 +14,8 @@ variable "vault_token" {}
   path = "test/data/demo"
 }
 
-resource "local_file" "test"{
+resource "local_file" "test" {
 
-    filename = "tmp/1"
+    filename = "/tmp/1"
     content = data.vault_generic_secret.secret_data["username"] 
 }
