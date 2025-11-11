@@ -11,7 +11,7 @@ variable "vault_token" {}
  
 
  data "vault_generic_secret" "secret_data" {
-  path = "test/data/demo"
+  path = "test/demo"
 }
 
 resource "local_file" "test" {
