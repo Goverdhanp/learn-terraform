@@ -1,0 +1,21 @@
+provider "vault" {
+
+  address = "https://vault-internal.gvndevops12.tech:8200"
+
+
+
+  token = var.token
+}
+
+variable "vault_token" {}
+ 
+
+ data "vault_generic_secret" "secret_data" {
+  path = "test/data/demo"
+}
+
+resource "local_file" "test"{
+
+    filename = "tmp/1"
+    content = data.vault_generic_secret.secret_data["username"] 
+}
