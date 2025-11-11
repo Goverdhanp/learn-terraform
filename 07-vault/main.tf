@@ -1,5 +1,5 @@
 provider "vault" {
-  address = "http://vault-internal.gvndevops12.tech:8200"
+  address = "http://vault.gvndevops12.tech:8200"
   token   = var.vault_token
 }
 
